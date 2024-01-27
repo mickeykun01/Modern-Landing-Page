@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroi';
+}
+
+body , html{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1600px;
+    /* border: 1px solid red; */
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    padding: 50px 0;
+}
+
+#nav img{
+    height: 60px;
+}
+
+#n-left , #n-right{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    pointer-events: all;
+}
+
+#n-right{
+   display: flex;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0% , -50%);
+}
+
+#hleft{
+    min-width: 50%;
+}
+
+#hleft .elem{
+    position: relative;
+    height: 8vw;   
+    overflow: hidden;
+}
+
+#hleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#hleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: 'kajiro';
+    color: white;
+    font-size: 10vw;
+    font-weight: 100;
+}
+
+#hright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:18%;
+    /* background-color: green; */
+    color: white;
+}
+
+#hright p{
+    text-align: right;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#hright #dimg img{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#hright p:nth-child(3){
+   margin-bottom: 100px;
+}
+
+
+#hleft button{
+    background-color: white;
+    margin: 3vw;
+    font-family: 'kajiro';
+    padding: .5vw 2vw;
+    font-size: 2.5vw;
+    font-weight: 100;
+    pointer-events: all;
+}
+
+
